@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05126190708dca94a9fdced5f8bf705e, type: 3}
+  m_Name: Page2
+  m_EditorClassIdentifier: 
+  backgroundImage: {fileID: 21300000, guid: 71d343845ba6bb44f94a5f16b3f0a1a4, type: 3}
+  mainText: some other test
+  options:
+  - optionText: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+      odio.
+    nextPage: {fileID: 11400000, guid: 79551f6df17027a4cb4a891eea383987, type: 2}
+  - optionText: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+      odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
+    nextPage: {fileID: 11400000, guid: 79551f6df17027a4cb4a891eea383987, type: 2}

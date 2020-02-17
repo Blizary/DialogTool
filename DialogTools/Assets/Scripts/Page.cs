@@ -8,5 +8,7 @@ public class Page : ScriptableObject
     public Sprite backgroundImage;
     [TextArea]
     public string mainText;
+    public bool talkingToSomeone;
+    public Sprite otherPersonSprite;
     public List<PageOption> options;
 }
