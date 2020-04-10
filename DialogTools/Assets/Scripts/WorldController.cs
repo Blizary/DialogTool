@@ -13,10 +13,15 @@ public class WorldController : MonoBehaviour
     public GameObject mainText;
     public GameObject optionHost;
     public GameObject otherPersonImage;
+    public GameObject previousButton;
+    public GameObject nextButton;
 
 
     [Header("Prefabs")]
     public GameObject optionPrefab;
+
+
+    private string newText;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,8 +31,61 @@ public class WorldController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        CheckPageOfText();
+
     }
+
+    /// <summary>
+    /// Sets the page number of the text back to 1
+    /// </summary>
+    void ResetPageOfText()
+    {
+        mainText.GetComponent<TextMeshProUGUI>().pageToDisplay = 1;
+    }
+    
+
+    /// <summary>
+    /// Check the current pages of the text and hide and displays the buttons accordingly
+    /// </summary>
+    void CheckPageOfText()
+    {
+        if(currentPage.numOfPages ==0)
+        {
+            previousButton.SetActive(false);
+            nextButton.SetActive(false);
+        }
+        else
+        {
+            //previous button management
+            if (mainText.GetComponent<TextMeshProUGUI>().pageToDisplay == 1)
+            {
+                previousButton.SetActive(false);
+            }
+            else
+            {
+                previousButton.SetActive(true);
+            }
+
+
+            //next button management
+            if (mainText.GetComponent<TextMeshProUGUI>().pageToDisplay == currentPage.numOfPages)
+            {
+                nextButton.SetActive(false);
+            }
+            else
+            {
+                nextButton.SetActive(true);
+            }
+        }
+
+
+       
+
+    }
+
+
+
+
 
     /// <summary>
     /// Updates the current page and runs the read page function
@@ -36,6 +94,7 @@ public class WorldController : MonoBehaviour
     public void UpdatePage(Page _newPage)
     {
         currentPage = _newPage;
+        ResetPageOfText();
         ReadPage();
 
     }
@@ -54,6 +113,7 @@ public class WorldController : MonoBehaviour
         {
             GameObject.Destroy(child.gameObject);
         }
+
         //add new options
         if(currentPage.options.Count!=0)
         {
@@ -61,6 +121,7 @@ public class WorldController : MonoBehaviour
             {
                 GameObject newOption = Instantiate(optionPrefab, optionHost.transform);
                 newOption.GetComponent<OptionButton>().nextPage = currentPage.options[i].nextPage;
+                newOption.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = currentPage.options[i].optionText;
 
             }
         }
@@ -80,4 +141,17 @@ public class WorldController : MonoBehaviour
             otherPersonImage.SetActive(false);
         }
     }
+
+
+    public void NextPageOfText()
+    {
+        mainText.GetComponent<TextMeshProUGUI>().pageToDisplay += 1;
+    }
+
+    public void PreviousPageOfText()
+    {
+        mainText.GetComponent<TextMeshProUGUI>().pageToDisplay -= 1;
+    }
+
+  
 }

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05126190708dca94a9fdced5f8bf705e, type: 3}
+  m_Name: Start
+  m_EditorClassIdentifier: 
+  backgroundImage: {fileID: 21300000, guid: e9327c7b600bef54eb4990b73a8ed449, type: 3}
+  mainText: "Old Steve live far away in the country, when he was young, he had been
+    to the city and had engaged in a period of manual Labour. Because he works hard
+    and has no bad habits so he amassed some property -- some cash, he loved this
+    cute little thing. He was not usually willing to spend money, nor did he trust
+    to deposit it in the bank and let some other people to keep for him. \r\nIn order
+    to save money, he lived in the most humble environment, ate only the cheapest
+    food, never drank, and lived like an ascetic; but in his eyes, it was all worth
+    it. Eventually, Steve returned to the countryside with his hard-earned savings,
+    because he always felt that he did not belong in the big city, even though he
+    had worked there for several years. \r\nIn the city, changes happen so fast, new
+    things appear faster than he can accept, which makes him feel very uncomfortable.
+    After he decided to go back to his hometown, he bought what he considered decent
+    clothes, a less expensive pipe -- even though he had never smoked before, and
+    a radio, the most expensive he had ever spent as long as he could remember. \r\nWhen
+    he came back down, he seemed to breathe a sigh of relief. Everything was still
+    familiar, almost the same as it had been when he had left years before. Steve
+    was satisfied with that, he hated changes. He thought he might live out his life
+    like this, simply but more dignified than the rest of the village, that's enough.
+    In this way, in the changeless days, Steve gradually became the old Steve.\r\n"
+  numOfPages: 4
+  talkingToSomeone: 0
+  otherPersonSprite: {fileID: 0}
+  options:
+  - optionText: 'Home
+
+'
+    nextPage: {fileID: 11400000, guid: ee739a0762e1ad641841c397efdb2f60, type: 2}

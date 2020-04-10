@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05126190708dca94a9fdced5f8bf705e, type: 3}
+  m_Name: Arrived in the city
+  m_EditorClassIdentifier: 
+  backgroundImage: {fileID: 21300000, guid: 0f777d1c5cca64b40b1249116f9aeddb, type: 3}
+  mainText: "Steve returned to the city, and although he was prepared, the changes
+    in the city were more than he had imagined.When he was a young man, he had worked
+    in the city for a few years. It wasn't a long time, but Steve still felt uncomfortable.
+    All kinds of new things came up so fast, even the streets and buildings, which
+    were supposed to stay the same, changed so often. SO he felt he did not belong
+    to the city.\r\nNow he had to go back to the place, but everything was different
+    from what he remembered decades ago.Old Steve felt as if he were young again,
+    not physically or mentally, but as the nervous, embarrassed, bewildered little
+    Steve who had just entered the big city."
+  talkingToSomeone: 0
+  otherPersonSprite: {fileID: 0}
+  options:
+  - optionText: Restaurant
+    nextPage: {fileID: 11400000, guid: 25f7bb5c020ef8f4eab0cb5ff413ffb0, type: 2}
+  - optionText: Convenience Store
+    nextPage: {fileID: 11400000, guid: 759091846c53fe843bdb1bb715376d81, type: 2}
+  - optionText: Bank
+    nextPage: {fileID: 11400000, guid: 67884407e9665ab458efc403f9aa73c8, type: 2}

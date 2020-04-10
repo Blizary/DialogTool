@@ -7,6 +7,8 @@ public class OptionButton : MonoBehaviour
     [HideInInspector]
     public Page nextPage;
 
+    
+
     /// <summary>
     /// Called on button pressed
     /// </summary>

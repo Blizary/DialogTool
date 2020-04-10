@@ -68,8 +68,9 @@ MonoBehaviour:
   m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
     Praesent libero. Sed cursus ante dapibus diam. Sed nisi. '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 83e674a3414732342b693c65798f430a, type: 2}
+  m_sharedMaterial: {fileID: 7905426123197896222, guid: 83e674a3414732342b693c65798f430a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

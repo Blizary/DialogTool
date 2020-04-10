@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05126190708dca94a9fdced5f8bf705e, type: 3}
+  m_Name: Post Office
+  m_EditorClassIdentifier: 
+  backgroundImage: {fileID: 21300000, guid: c12d6da9082e5a54c864506db65a4e08, type: 3}
+  mainText: When Steve got to the post office, the staff told him he could change
+    the money, but there was a 30 percent service charge.
+  talkingToSomeone: 1
+  otherPersonSprite: {fileID: 21300000, guid: 666e2677fe2792747b55f0598d467d81, type: 3}
+  options:
+  - optionText: Train Station 2
+    nextPage: {fileID: 11400000, guid: 2663acad3349d0f4790101299c7c2928, type: 2}

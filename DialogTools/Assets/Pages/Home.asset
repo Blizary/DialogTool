@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05126190708dca94a9fdced5f8bf705e, type: 3}
+  m_Name: Home
+  m_EditorClassIdentifier: 
+  backgroundImage: {fileID: 21300000, guid: 8c68de6131d18bc4290b89355a890447, type: 3}
+  mainText: "That day, as usual, old Steve took his radio with him, smoking his pipe.
+    He felt that as the only decent person in the village who had ever been to the
+    city and seen the world, he should listen more to the radio. Although he didn't
+    understand the news most of the time, he would mumble something into the air from
+    his pipe as if he were making a comment.\r\n\r\n But this time it was different
+    from usual. Old Steve heard on the radio that \"the government has decided to
+    stop using paper money for transaction settlement. Citizens holding paper money
+    can exchange it into electronic money at central bank in the city. The advantage
+    of electronic money is...\"Old Steve was so surprised that he choked his lungs
+    with the smoke and began to cough violently.\r\n\r\n\r\n\" Damn it, I'm going
+    to the city to find out what the heck this electronic currency is and check with
+    a major hospital to see if there's anything wrong with my lung\r\n"
+  numOfPages: 3
+  talkingToSomeone: 0
+  otherPersonSprite: {fileID: 0}
+  options:
+  - optionText: 'Train Station of the village
+
+'
+    nextPage: {fileID: 11400000, guid: 130e656b1a350d14e98ce3e05dc94977, type: 2}
