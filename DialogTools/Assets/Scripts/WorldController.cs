@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class WorldController : MonoBehaviour
@@ -39,6 +40,7 @@ public class WorldController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ExitToMenu();
         CheckPageOfText();
 
     }
@@ -86,6 +88,15 @@ public class WorldController : MonoBehaviour
             }
         }
 
+    }
+
+
+    void ExitToMenu()
+    {
+        if(Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 
 
