@@ -16,6 +16,11 @@ MonoBehaviour:
   mainText: Steve wanted to exchange electronic money at the bank, but was told that
     the money he held was no longer in circulation several years ago. If he needed
     to exchange money, he needed the bank's electronic account.
+  texts:
+  - Steve wanted to exchange electronic money at the bank, but was told that the money
+    he held was no longer in circulation several years ago. If he needed to exchange
+    money, he needed the bank's electronic account.
+  numOfPages: 0
   talkingToSomeone: 0
   otherPersonSprite: {fileID: 0}
   options:
@@ -23,3 +28,4 @@ MonoBehaviour:
     nextPage: {fileID: 11400000, guid: d5621a785fed7d14d92883f5e398243d, type: 2}
   - optionText: Open an account
     nextPage: {fileID: 11400000, guid: 512dd728e7d12904c9b164a847abc339, type: 2}
+  pageMusic: {fileID: 0}

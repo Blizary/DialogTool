@@ -22,6 +22,18 @@ MonoBehaviour:
     from what he remembered decades ago.Old Steve felt as if he were young again,
     not physically or mentally, but as the nervous, embarrassed, bewildered little
     Steve who had just entered the big city."
+  texts:
+  - Steve returned to the city, and although he was prepared, the changes in the city
+    were more than he had imagined.When he was a young man, he had worked in the city
+    for a few years. It wasn't a long time, but Steve still felt uncomfortable. All
+    kinds of new things came up so fast, even the streets and buildings, which were
+    supposed to stay the same, changed so often. SO he felt he did not belong to the
+    city.
+  - Now he had to go back to the place, but everything was different from what he
+    remembered decades ago.Old Steve felt as if he were young again, not physically
+    or mentally, but as the nervous, embarrassed, bewildered little Steve who had
+    just entered the big city.
+  numOfPages: 0
   talkingToSomeone: 0
   otherPersonSprite: {fileID: 0}
   options:
@@ -31,3 +43,4 @@ MonoBehaviour:
     nextPage: {fileID: 11400000, guid: 759091846c53fe843bdb1bb715376d81, type: 2}
   - optionText: Bank
     nextPage: {fileID: 11400000, guid: 67884407e9665ab458efc403f9aa73c8, type: 2}
+  pageMusic: {fileID: 0}

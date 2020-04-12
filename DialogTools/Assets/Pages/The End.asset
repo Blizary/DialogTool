@@ -17,6 +17,13 @@ MonoBehaviour:
     and then he felt the ventilator covering his mouth and nose."I wonder if I can
     use cash here," thought old Steve, closing his eyes again. He seemed to see the
     village he knew...
+  texts:
+  - When old Steve opened his eyes again, he saw the astral lamp above him, and then
+    he felt the ventilator covering his mouth and nose."I wonder if I can use cash
+    here," thought old Steve, closing his eyes again. He seemed to see the village
+    he knew...
+  numOfPages: 0
   talkingToSomeone: 0
   otherPersonSprite: {fileID: 0}
   options: []
+  pageMusic: {fileID: 0}

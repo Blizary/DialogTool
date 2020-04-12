@@ -15,8 +15,13 @@ MonoBehaviour:
   backgroundImage: {fileID: 21300000, guid: c12d6da9082e5a54c864506db65a4e08, type: 3}
   mainText: When Steve got to the post office, the staff told him he could change
     the money, but there was a 30 percent service charge.
+  texts:
+  - When Steve got to the post office, the staff told him he could change the money,
+    but there was a 30 percent service charge.
+  numOfPages: 0
   talkingToSomeone: 1
-  otherPersonSprite: {fileID: 21300000, guid: 666e2677fe2792747b55f0598d467d81, type: 3}
+  otherPersonSprite: {fileID: 21300000, guid: ac38c49f24f5b9845803d9db0e6190a4, type: 3}
   options:
   - optionText: Train Station 2
     nextPage: {fileID: 11400000, guid: 2663acad3349d0f4790101299c7c2928, type: 2}
+  pageMusic: {fileID: 0}

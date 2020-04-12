@@ -8,9 +8,12 @@ public class Page : ScriptableObject
     public Sprite backgroundImage;
     [TextArea]
     public string mainText;
+    [TextArea]
+    public List<string> texts;
+    //[HideInInspector]
     public int numOfPages;
     public bool talkingToSomeone;
     public Sprite otherPersonSprite;
     public List<PageOption> options;
-    
+    public AudioClip pageMusic;
 }

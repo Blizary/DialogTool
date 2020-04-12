@@ -25,6 +25,19 @@ MonoBehaviour:
     with the smoke and began to cough violently.\r\n\r\n\r\n\" Damn it, I'm going
     to the city to find out what the heck this electronic currency is and check with
     a major hospital to see if there's anything wrong with my lung\r\n"
+  texts:
+  - That day, as usual, old Steve took his radio with him, smoking his pipe. He felt
+    that as the only decent person in the village who had ever been to the city and
+    seen the world, he should listen more to the radio. Although he didn't understand
+    the news most of the time, he would mumble something into the air from his pipe
+    as if he were making a comment.
+  - But this time it was different from usual. Old Steve heard on the radio that "the
+    government has decided to stop using paper money for transaction settlement. Citizens
+    holding paper money can exchange it into electronic money at central bank in the
+    city. The advantage of electronic money is..."Old Steve was so surprised that
+    he choked his lungs with the smoke and began to cough violently.
+  - '"Damn it, I''m going to the city to find out what the heck this electronic currency
+    is and check with a major hospital to see if there''s anything wrong with my lung.'
   numOfPages: 3
   talkingToSomeone: 0
   otherPersonSprite: {fileID: 0}
@@ -33,3 +46,4 @@ MonoBehaviour:
 
 '
     nextPage: {fileID: 11400000, guid: 130e656b1a350d14e98ce3e05dc94977, type: 2}
+  pageMusic: {fileID: 0}

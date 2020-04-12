@@ -13,12 +13,18 @@ MonoBehaviour:
   m_Name: Restaurant
   m_EditorClassIdentifier: 
   backgroundImage: {fileID: 21300000, guid: 38884e2939e48934784e031dd508aa12, type: 3}
-  mainText: "A decent man ought not to go about his business hungry, old Steve thought.\r\nHe
-    go to a restaurant, only to find that the restaurant did not accept cash payment,
-    Steve had to find other restaurants...\r\nHe found a small hot dog shop where
-    he could use cash. But when he pulled out the money to pay, the owner told him
-    that the bill was no longer in circulation and that it needed to be exchanged
-    for them."
+  mainText: "A decent man ought not to go about his business hungry, old Steve thought.\r\n\r\n\r\n\r\n\r\nHe
+    got to a restaurant, only to find that the restaurant did not accept cash payment,
+    Steve had to find other restaurants.He found a small hot dog shop where he could
+    use cash. But when he pulled out the money to pay, the owner told him that the
+    bill was no longer in circulation and that it needed to be exchanged for them.\r\n"
+  texts:
+  - A decent man ought not to go about his business hungry, old Steve thought.
+  - He got to a restaurant, only to find that the restaurant did not accept cash payment,
+    Steve had to find other restaurants.He found a small hot dog shop where he could
+    use cash. But when he pulled out the money to pay, the owner told him that the
+    bill was no longer in circulation and that it needed to be exchanged for them.
+  numOfPages: 2
   talkingToSomeone: 0
   otherPersonSprite: {fileID: 0}
   options:
@@ -28,3 +34,4 @@ MonoBehaviour:
     nextPage: {fileID: 11400000, guid: 67884407e9665ab458efc403f9aa73c8, type: 2}
   - optionText: Convenience Store
     nextPage: {fileID: 11400000, guid: 759091846c53fe843bdb1bb715376d81, type: 2}
+  pageMusic: {fileID: 0}

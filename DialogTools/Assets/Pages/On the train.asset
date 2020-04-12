@@ -15,15 +15,27 @@ MonoBehaviour:
   backgroundImage: {fileID: 21300000, guid: 6cfeee970f62c3a43a883f212a1fbf06, type: 3}
   mainText: "Old Steve get on the train to a big city, he wondered why 'cash' suddenly
     wasn't 'money' anymore, why people stopped using these cute bills and replaced
-    them with something else...\r\n\r\nWatching the familiar landscape fly by outside
-    the car window, Steve recalled how the village had looked when he was a boy;When
-    he grew up and decided to work in the city, the village was the same;He came back
-    after years of working in the city, and the village looked the same;Now that he
-    is old, nothing has changed here.He could not help thinking how much better it
-    would be if the world were static, and why there were always so many new changes,
-    and he coughed again under his breath."
+    them with something else...\r\n\r\n\r\n\r\nWatching the familiar landscape fly
+    by outside, Steve recalled how the village looked when he was a boy. When he left
+    to work in the city, the village was the same;He came back after years of working
+    in the city, and the village looked the same;Now that he is old, nothing has changed
+    here.He could not help thinking how much better it would be if the world were
+    static, and why there were always so many new changes, and he coughed again under
+    his breath.\r\n"
+  texts:
+  - Old Steve get on the train to a big city, he wondered why 'cash' suddenly wasn't
+    'money' anymore, why people stopped using these cute bills and replaced them with
+    something else...
+  - Watching the familiar landscape fly by outside, Steve recalled how the village
+    looked when he was a boy. When he left to work in the city, the village was the
+    same;He came back after years of working in the city, and the village looked the
+    same;Now that he is old, nothing has changed here.He could not help thinking how
+    much better it would be if the world were static, and why there were always so
+    many new changes, and he coughed again under his breath.
+  numOfPages: 2
   talkingToSomeone: 0
   otherPersonSprite: {fileID: 0}
   options:
   - optionText: Arrived in the city
     nextPage: {fileID: 11400000, guid: 53e80f4bd5baf3f4f812a6379691a247, type: 2}
+  pageMusic: {fileID: 0}

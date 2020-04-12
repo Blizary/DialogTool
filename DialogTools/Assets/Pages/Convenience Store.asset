@@ -16,6 +16,11 @@ MonoBehaviour:
   mainText: Steve wanted to go to the convenience store to do some shopping, but he
     found that the convenience store in the city didn't even have a human counter.
     He couldn't use cash at all.
+  texts:
+  - Steve wanted to go to the convenience store to do some shopping, but he found
+    that the convenience store in the city didn't even have a human counter. He couldn't
+    use cash at all.
+  numOfPages: 0
   talkingToSomeone: 0
   otherPersonSprite: {fileID: 0}
   options:
@@ -23,3 +28,4 @@ MonoBehaviour:
     nextPage: {fileID: 11400000, guid: 25f7bb5c020ef8f4eab0cb5ff413ffb0, type: 2}
   - optionText: Bank
     nextPage: {fileID: 11400000, guid: 67884407e9665ab458efc403f9aa73c8, type: 2}
+  pageMusic: {fileID: 0}

@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class WorldController : MonoBehaviour
 {
     public Page currentPage;
+    public float typeTextWaitTime;
 
     [Header("UI")]
     public GameObject backgroundImage;
@@ -15,12 +16,19 @@ public class WorldController : MonoBehaviour
     public GameObject otherPersonImage;
     public GameObject previousButton;
     public GameObject nextButton;
+    public GameObject fadePanel;
 
 
     [Header("Prefabs")]
     public GameObject optionPrefab;
 
+    [Header("Music")]
+    public AudioClip typingSound;
+    [HideInInspector]
+    public AudioClip backgroundSound;
 
+    private int currentTextPage;
+    private bool typing;
     private string newText;
     // Start is called before the first frame update
     void Start()
@@ -57,7 +65,7 @@ public class WorldController : MonoBehaviour
         else
         {
             //previous button management
-            if (mainText.GetComponent<TextMeshProUGUI>().pageToDisplay == 1)
+            if (currentTextPage ==0)
             {
                 previousButton.SetActive(false);
             }
@@ -68,7 +76,7 @@ public class WorldController : MonoBehaviour
 
 
             //next button management
-            if (mainText.GetComponent<TextMeshProUGUI>().pageToDisplay == currentPage.numOfPages)
+            if (currentTextPage == currentPage.numOfPages-1)
             {
                 nextButton.SetActive(false);
             }
@@ -78,11 +86,16 @@ public class WorldController : MonoBehaviour
             }
         }
 
-
-       
-
     }
 
+
+    void TypingSound()
+    {
+        if(typing)
+        {
+           
+        }
+    }
 
 
 
@@ -94,20 +107,65 @@ public class WorldController : MonoBehaviour
     public void UpdatePage(Page _newPage)
     {
         currentPage = _newPage;
-        ResetPageOfText();
         ReadPage();
 
     }
+
+    /// <summary>
+    /// Typewriter effect for the main text
+    /// </summary>
+    /// <returns></returns>
+    IEnumerator TypeText()
+    {
+        typing = true;
+        mainText.GetComponent<TextMeshProUGUI>().text = "";
+
+        for (int i = 0; i < currentPage.texts[currentTextPage].Length; i++)
+        {
+            mainText.GetComponent<TextMeshProUGUI>().text += currentPage.texts[currentTextPage][i];
+            yield return new WaitForSeconds(typeTextWaitTime);
+        }
+
+        typing = false;
+    }
+
+
 
     /// <summary>
     /// Reads the information on the page and displays it on screen 
     /// </summary>
     public void ReadPage()
     {
+        //Trigger fade effect
+        fadePanel.GetComponent<Animator>().SetBool("FadeIn",true);
+        currentTextPage = 0;
+        typing = false;
+        StartCoroutine(IE_ReadPage());
+        
+    }
+
+    IEnumerator IE_ReadPage()
+    {
+        yield return new WaitForSeconds(1.5f);
+
+        ResetPageOfText();
+        //Change music
+        if(backgroundSound!=null && backgroundSound!= currentPage.pageMusic) //if sound changed on the page
+        {
+            backgroundSound = currentPage.pageMusic;
+            GetComponent<AudioSource>().Stop();
+            GetComponent<AudioSource>().clip = backgroundSound;
+            GetComponent<AudioSource>().Play();
+        }
+
         //Change image
         backgroundImage.GetComponent<Image>().sprite = currentPage.backgroundImage;
         //Change maintext
-        mainText.GetComponent<TextMeshProUGUI>().text = currentPage.mainText;
+        StopCoroutine("TypeText");
+        currentTextPage = 0;
+        StartCoroutine("TypeText");
+        currentPage.numOfPages = currentPage.texts.Count;
+
         //Clear old options
         foreach (Transform child in optionHost.transform)
         {
@@ -115,7 +173,7 @@ public class WorldController : MonoBehaviour
         }
 
         //add new options
-        if(currentPage.options.Count!=0)
+        if (currentPage.options.Count != 0)
         {
             for (int i = 0; i < currentPage.options.Count; i++)
             {
@@ -131,7 +189,7 @@ public class WorldController : MonoBehaviour
         }
 
         //Enable or disable other person image
-        if(currentPage.talkingToSomeone)
+        if (currentPage.talkingToSomeone)
         {
             otherPersonImage.SetActive(true);
             otherPersonImage.GetComponent<Image>().sprite = currentPage.otherPersonSprite;
@@ -140,17 +198,25 @@ public class WorldController : MonoBehaviour
         {
             otherPersonImage.SetActive(false);
         }
+
+
+        fadePanel.GetComponent<Animator>().SetBool("FadeIn", false);
     }
+
 
 
     public void NextPageOfText()
     {
-        mainText.GetComponent<TextMeshProUGUI>().pageToDisplay += 1;
+        StopCoroutine("TypeText");
+        currentTextPage += 1;
+        StartCoroutine("TypeText");
     }
 
     public void PreviousPageOfText()
     {
-        mainText.GetComponent<TextMeshProUGUI>().pageToDisplay -= 1;
+        StopCoroutine("TypeText");
+        currentTextPage -= 1;
+        StartCoroutine("TypeText");
     }
 
   

@@ -14,15 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgroundImage: {fileID: 21300000, guid: e08f67e6c1448cd40b01ac52c041b6fe, type: 3}
   mainText: "Old Steve was standing on the platform waiting for the train. There were
-    not many people on the platform. A conductor came up to him and asked, \"would
-    you like to buy a ticket, Sir?\"\r\n\"Oh yes, please sell me a ticket to the city
-    for the next train.\"\r\n\"Yes Sir, will you be paying in cash or electronically?\"\r\nHearing
-    this, Steve thought to himself, \"it's electronic payments again. Has this thing
-    spread here yet?\""
+    not many people on the platform.\r\n\r\n\r\n\r\n A conductor came up to him and
+    asked, \"would you like to buy a ticket, Sir?\"\r\n\"Oh yes, please sell me a
+    ticket to the city for the next train.\"\r\n\"Yes Sir, will you be paying in cash
+    or electronically?\"\r\nHearing this, Steve thought to himself, \"it's electronic
+    payments again. Has this thing spread here yet?\"\r\n"
+  texts:
+  - Old Steve was standing on the platform waiting for the train. There were not many
+    people on the platform.
+  - " A conductor came up to him and asked, \"would you like to buy a ticket, Sir?\"\r\n\"Oh
+    yes, please sell me a ticket to the city for the next train.\"\r\n\"Yes Sir, will
+    you be paying in cash or electronically?\"\r\nHearing this, Steve thought to himself,
+    \"it's electronic payments again. Has this thing spread here yet?\"\r"
+  numOfPages: 2
   talkingToSomeone: 1
-  otherPersonSprite: {fileID: 21300000, guid: 666e2677fe2792747b55f0598d467d81, type: 3}
+  otherPersonSprite: {fileID: 21300000, guid: ac38c49f24f5b9845803d9db0e6190a4, type: 3}
   options:
   - optionText: Stick to use paper money
     nextPage: {fileID: 11400000, guid: dcf06d262ac3a2a4191dd614b51b7e5b, type: 2}
   - optionText: Try to use electronic money
     nextPage: {fileID: 11400000, guid: e96e4de5651b6ad4d987ed13558782c3, type: 2}
+  pageMusic: {fileID: 0}

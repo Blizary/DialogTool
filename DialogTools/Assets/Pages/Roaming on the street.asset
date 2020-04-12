@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgroundImage: {fileID: 21300000, guid: 71d343845ba6bb44f94a5f16b3f0a1a4, type: 3}
   mainText: Old Steve felt dark and weak. He fell down in the street and lost consciousness...
+  texts:
+  - Old Steve felt dark and weak. He fell down in the street and lost consciousness...
+  numOfPages: 0
   talkingToSomeone: 0
   otherPersonSprite: {fileID: 0}
   options:
   - optionText: The End
     nextPage: {fileID: 11400000, guid: ebc287705842d254fb74814450e019d4, type: 2}
+  pageMusic: {fileID: 0}

@@ -16,6 +16,10 @@ MonoBehaviour:
   mainText: Steve wanted to open an account in the bank, but found that his ID card
     had expired, and he had to go back to his local police station to get a new ID
     card.
+  texts:
+  - Steve wanted to open an account in the bank, but found that his ID card had expired,
+    and he had to go back to his local police station to get a new ID card.
+  numOfPages: 0
   talkingToSomeone: 0
   otherPersonSprite: {fileID: 0}
   options:
@@ -23,3 +27,4 @@ MonoBehaviour:
     nextPage: {fileID: 11400000, guid: d5621a785fed7d14d92883f5e398243d, type: 2}
   - optionText: Train Station2
     nextPage: {fileID: 11400000, guid: 2663acad3349d0f4790101299c7c2928, type: 2}
+  pageMusic: {fileID: 0}

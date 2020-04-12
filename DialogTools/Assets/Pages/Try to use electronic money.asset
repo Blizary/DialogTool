@@ -16,12 +16,22 @@ MonoBehaviour:
   mainText: "\"I want a ticket to the city, the nearest train, um...pay by electronic
     money\"Steve decided to try something new.\"Ok, then, please look at the camera
     over here,\" the conductor said, but he quickly frowned at the screen and asked,
-    \"do you have your own personal electronic account, Sir?\"\r\nElectronic accounts?
-    Old Steve didn't know anything about it, but he still noticed the word 'electronic,'
-    so he was sure it was another novelty he didn't know about, but no matter, I still
-    had my cute dollar bill, old Steve thought."
+    \"do you have your own personal electronic account, Sir?\"\r\n\r\n\r\nElectronic
+    accounts? Old Steve didn't know anything about it, but he still noticed the word
+    'electronic,' so he was sure it was another novelty he didn't know about, but
+    no matter, I still had my cute dollar bill, old Steve thought.\r\n"
+  texts:
+  - '"I want a ticket to the city, the nearest train, um...pay by electronic money"Steve
+    decided to try something new."Ok, then, please look at the camera over here,"
+    the conductor said, but he quickly frowned at the screen and asked, "do you have
+    your own personal electronic account, Sir?"'
+  - Electronic accounts? Old Steve didn't know anything about it, but he still noticed
+    the word 'electronic,' so he was sure it was another novelty he didn't know about,
+    but no matter, I still had my cute dollar bill, old Steve thought.
+  numOfPages: 2
   talkingToSomeone: 1
-  otherPersonSprite: {fileID: 21300000, guid: 666e2677fe2792747b55f0598d467d81, type: 3}
+  otherPersonSprite: {fileID: 21300000, guid: ac38c49f24f5b9845803d9db0e6190a4, type: 3}
   options:
   - optionText: Stick to use paper money
     nextPage: {fileID: 11400000, guid: dcf06d262ac3a2a4191dd614b51b7e5b, type: 2}
+  pageMusic: {fileID: 0}

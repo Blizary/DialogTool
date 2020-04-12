@@ -17,8 +17,15 @@ MonoBehaviour:
     money, they're fine,\" Steve said, handing over a note.\r\nThe conductor looked
     a little odd as he examined the note, but he didn't say anything and sold Steve
     a ticket anyway."
+  texts:
+  - '"Give me a ticket for the nearest train to the city and pay in paper money, they''re
+    fine," Steve said, handing over a note. '
+  - The conductor looked a little odd as he examined the note, but he didn't say anything
+    and sold Steve a ticket anyway.
+  numOfPages: 0
   talkingToSomeone: 1
-  otherPersonSprite: {fileID: 21300000, guid: 666e2677fe2792747b55f0598d467d81, type: 3}
+  otherPersonSprite: {fileID: 21300000, guid: ac38c49f24f5b9845803d9db0e6190a4, type: 3}
   options:
   - optionText: On the train
     nextPage: {fileID: 11400000, guid: 81a207c7869760840939e3bfc2288252, type: 2}
+  pageMusic: {fileID: 0}

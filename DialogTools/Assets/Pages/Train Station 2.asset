@@ -18,8 +18,16 @@ MonoBehaviour:
     looked at a self-service ticket machine and a sign that said \"no cash allowed\".
     He had never felt so helpless before.\r\nHe walked out of the station out of his
     mind and back into the street."
+  texts:
+  - Steve was fed up with what he had encountered in the city, so he just wanted to
+    go back to his village.
+  - He went to the ticket office of the station, looked at a self-service ticket machine
+    and a sign that said "no cash allowed". He had never felt so helpless before.
+  - He walked out of the station out of his mind and back into the street.
+  numOfPages: 0
   talkingToSomeone: 0
   otherPersonSprite: {fileID: 0}
   options:
   - optionText: Roaming on the street
     nextPage: {fileID: 11400000, guid: 4cdccb978a55b5a45a17b58abcb64972, type: 2}
+  pageMusic: {fileID: 0}
