@@ -161,7 +161,7 @@ public class WorldController : MonoBehaviour
 
         ResetPageOfText();
         //Change music
-        if(backgroundSound!=null && backgroundSound!= currentPage.pageMusic) //if sound changed on the page
+        if ((currentPage.pageMusic != null && backgroundSound != currentPage.pageMusic)) //if sound changed on the page
         {
             backgroundSound = currentPage.pageMusic;
             GetComponent<AudioSource>().Stop();
