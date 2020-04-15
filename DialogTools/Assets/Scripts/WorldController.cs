@@ -31,9 +31,13 @@ public class WorldController : MonoBehaviour
     private int currentTextPage;
     private bool typing;
     private string newText;
+    private AudioSource typewriteSource;
     // Start is called before the first frame update
     void Start()
     {
+        typewriteSource = GameObject.FindGameObjectWithTag("TypewriterSoundSource").GetComponent<AudioSource>();
+        typewriteSource.playOnAwake = false;
+        typewriteSource.clip = typingSound;
         ReadPage();
     }
 
@@ -42,7 +46,6 @@ public class WorldController : MonoBehaviour
     {
         ExitToMenu();
         CheckPageOfText();
-
     }
 
     /// <summary>
@@ -100,16 +103,6 @@ public class WorldController : MonoBehaviour
     }
 
 
-    void TypingSound()
-    {
-        if(typing)
-        {
-           
-        }
-    }
-
-
-
 
     /// <summary>
     /// Updates the current page and runs the read page function
@@ -129,6 +122,7 @@ public class WorldController : MonoBehaviour
     IEnumerator TypeText()
     {
         typing = true;
+        typewriteSource.Play(); //start sound effect for typing
         mainText.GetComponent<TextMeshProUGUI>().text = "";
 
         for (int i = 0; i < currentPage.texts[currentTextPage].Length; i++)
@@ -138,6 +132,7 @@ public class WorldController : MonoBehaviour
         }
 
         typing = false;
+        typewriteSource.Stop(); //stop sound effect
     }
 
 
@@ -166,6 +161,7 @@ public class WorldController : MonoBehaviour
             backgroundSound = currentPage.pageMusic;
             GetComponent<AudioSource>().Stop();
             GetComponent<AudioSource>().clip = backgroundSound;
+            //test
             GetComponent<AudioSource>().Play();
         }
 
