@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName ="NewPage",menuName ="Page")]
 public class Page : ScriptableObject
 {
+    public bool ending;
     public Sprite backgroundImage;
     [TextArea]
     public string mainText;

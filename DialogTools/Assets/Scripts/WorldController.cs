@@ -18,6 +18,8 @@ public class WorldController : MonoBehaviour
     public GameObject previousButton;
     public GameObject nextButton;
     public GameObject fadePanel;
+    public GameObject endText;
+    public GameObject options;
 
 
     [Header("Prefabs")]
@@ -84,6 +86,7 @@ public class WorldController : MonoBehaviour
             if (currentTextPage == currentPage.numOfPages-1)
             {
                 nextButton.SetActive(false);
+                options.SetActive(true);
             }
             else
             {
@@ -144,6 +147,7 @@ public class WorldController : MonoBehaviour
     {
         //Trigger fade effect
         fadePanel.GetComponent<Animator>().SetBool("FadeIn",true);
+        options.SetActive(false);
         currentTextPage = 0;
         typing = false;
         StartCoroutine(IE_ReadPage());
@@ -167,6 +171,10 @@ public class WorldController : MonoBehaviour
 
         //Change image
         backgroundImage.GetComponent<Image>().sprite = currentPage.backgroundImage;
+        if(currentPage.backgroundImage!=null)
+        {
+            Debug.Log("THERE IS NO BACKGROUND IMAGE FOR THIS PAGE");
+        }
         //Change maintext
         StopCoroutine("TypeText");
         currentTextPage = 0;
@@ -192,7 +200,15 @@ public class WorldController : MonoBehaviour
         }
         else
         {
-            Debug.Log("THERE ARE NO OPTIONS FOR THIS PAGE");
+            if(currentPage.ending)
+            {
+                endText.SetActive(true);
+            }
+            else
+            {
+                Debug.Log("THERE ARE NO OPTIONS FOR THIS PAGE");
+            }
+            
         }
 
         //Enable or disable other person image
